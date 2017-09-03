@@ -17,6 +17,18 @@ import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+const config = {
+    apiKey: 'AIzaSyCefC7rLVzJz8gi1Al4xQqbJE6psSX25SU',
+    authDomain: 'newspaper-fb45c.firebaseapp.com',
+    databaseURL: 'https://newspaper-fb45c.firebaseio.com',
+    projectId: 'newspaper-fb45c',
+    storageBucket: '',
+    messagingSenderId: '641791000406'
+};
 
 @NgModule({
     declarations: [
@@ -37,7 +49,10 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
         HttpModule,
         ComponentsModule,
         RouterModule,
-        AppRoutingModule
+        AppRoutingModule,
+        AngularFireModule.initializeApp(config),
+        AngularFireDatabaseModule,
+        AngularFireAuthModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
