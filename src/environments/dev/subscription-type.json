@@ -1,0 +1,10 @@
+{
+  "subscription-type": [
+    {"_id": 0, "source_id": 0, "name": "WSJ 0", "days": "mon,tue,wed,thu,fri" },
+    {"_id": 1, "source_id": 0, "name": "WSJ 1", "days": "sat" },
+    {"_id": 2, "source_id": 0, "name": "WSJ 2", "days": "sun" },
+    {"_id": 3, "source_id": 1, "name": "USA 3", "days": "mon,tue,wed,thu,fri" },
+    {"_id": 4, "source_id": 1, "name": "USA 4", "days": "sat" },
+    {"_id": 5, "source_id": 1, "name": "USA 5", "days": "sun" }
+  ]
+}

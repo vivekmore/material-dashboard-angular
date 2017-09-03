@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "name": "WSJ",
+      "_id": "1"
+    },
+    {
+      "name": "USA",
+      "_id": "2"
+    },
+    {
+      "name": "NYT",
+      "_id": "3"
+    },
+    {
+      "name": "Barrons",
+      "_id": "4"
+    },
+    {
+      "name": "DFP",
+      "_id": "5"
+    },
+    {
+      "name": "D News",
+      "_id": "6"
+    }
+  ]
+}

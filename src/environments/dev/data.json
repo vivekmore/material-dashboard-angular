@@ -1,0 +1,342 @@
+{
+  "subscription-type": [
+    {
+      "days": "mon,tue,wed,thu,fri",
+      "name": "WSJ 0",
+      "source_id": 0,
+      "_id": 0
+    },
+    {
+      "days": "sat",
+      "name": "WSJ 1",
+      "source_id": 0,
+      "_id": 1
+    },
+    {
+      "days": "sun",
+      "name": "WSJ 2",
+      "source_id": 0,
+      "_id": 2
+    },
+    {
+      "days": "mon,tue,wed,thu,fri",
+      "name": "USA 3",
+      "source_id": 1,
+      "_id": 3
+    },
+    {
+      "days": "sat",
+      "name": "USA 4",
+      "source_id": 1,
+      "_id": 4
+    },
+    {
+      "days": "sun",
+      "name": "USA 5",
+      "source_id": 1,
+      "_id": 5
+    }
+  ],
+  "sources": [
+    {
+      "_id": 1,
+      "name": "WSJ"
+    },
+    {
+      "_id": 2,
+      "name": "USA"
+    },
+    {
+      "_id": 3,
+      "name": "NYT"
+    },
+    {
+      "_id": 4,
+      "name": "Barrons"
+    },
+    {
+      "_id": 5,
+      "name": "DFP"
+    },
+    {
+      "_id": 6,
+      "name": "D News"
+    }
+  ],
+  "customer-subscription": [
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 1,
+      "subscription_type_id": 0,
+      "customer_id": 0,
+      "_id": 0
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 1,
+      "subscription_type_id": 1,
+      "customer_id": 0,
+      "_id": 1
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 2,
+      "subscription_type_id": 2,
+      "customer_id": 0,
+      "_id": 2
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 2,
+      "subscription_type_id": 3,
+      "customer_id": 0,
+      "_id": 3
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 1,
+      "subscription_type_id": 4,
+      "customer_id": 0,
+      "_id": 4
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 1,
+      "subscription_type_id": 0,
+      "customer_id": 5,
+      "_id": 5
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 1,
+      "subscription_type_id": 1,
+      "customer_id": 6,
+      "_id": 6
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 1,
+      "subscription_type_id": 2,
+      "customer_id": 7,
+      "_id": 7
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 2,
+      "subscription_type_id": 3,
+      "customer_id": 8,
+      "_id": 8
+    },
+    {
+      "last_updated": "08/31/2017",
+      "for_date": "09/01/2017",
+      "subscription_status_id": 0,
+      "subscription_type_id": 4,
+      "customer_id": 9,
+      "_id": 9
+    }
+  ],
+  "customers": [
+    {
+      "phone": "(954) 485-2357",
+      "email": "margaret.vargas@customers.name",
+      "address": "177 Krier Place, Kipp, Northern Mariana Islands, 65685",
+      "name": {
+        "last": "Vargas",
+        "first": "Margaret"
+      },
+      "_id": 0
+    },
+    {
+      "phone": "(876) 502-2216",
+      "email": "rollins.grant@customers.com",
+      "address": "802 Bethel Loop, Harleigh, Guam, 42454",
+      "name": {
+        "last": "Grant",
+        "first": "Rollins"
+      },
+      "_id": 1
+    },
+    {
+      "phone": "(855) 593-2405",
+      "email": "mueller.young@customers.org",
+      "address": "765 Meeker Avenue, Disautel, Maryland, 41676",
+      "name": {
+        "last": "Young",
+        "first": "Mueller"
+      },
+      "_id": 2
+    },
+    {
+      "phone": "(978) 417-3592",
+      "email": "charmaine.evans@customers.biz",
+      "address": "550 Poplar Street, Wintersburg, Washington, 44899",
+      "name": {
+        "last": "Evans",
+        "first": "Charmaine"
+      },
+      "_id": 3
+    },
+    {
+      "phone": "(824) 547-2155",
+      "email": "rosalinda.koch@customers.io",
+      "address": "229 Dodworth Street, Valle, New York, 93179",
+      "name": {
+        "last": "Koch",
+        "first": "Rosalinda"
+      },
+      "_id": 4
+    },
+    {
+      "phone": "(916) 574-2328",
+      "email": "emilia.michael@customers.co.uk",
+      "address": "974 Metropolitan Avenue, Whitewater, Indiana, 95667",
+      "name": {
+        "last": "Michael",
+        "first": "Emilia"
+      },
+      "_id": 5
+    },
+    {
+      "phone": "(871) 439-2766",
+      "email": "rhoda.west@customers.info",
+      "address": "659 Gilmore Court, Faywood, Palau, 18704",
+      "name": {
+        "last": "West",
+        "first": "Rhoda"
+      },
+      "_id": 6
+    },
+    {
+      "phone": "(873) 445-3814",
+      "email": "lily.boyd@customers.us",
+      "address": "489 Tudor Terrace, Comptche, Puerto Rico, 91352",
+      "name": {
+        "last": "Boyd",
+        "first": "Lily"
+      },
+      "_id": 7
+    },
+    {
+      "phone": "(889) 461-2205",
+      "email": "annette.brewer@customers.me",
+      "address": "199 Lewis Avenue, Ada, New Jersey, 79760",
+      "name": {
+        "last": "Brewer",
+        "first": "Annette"
+      },
+      "_id": 8
+    },
+    {
+      "phone": "(809) 472-2529",
+      "email": "bonita.daugherty@customers.biz",
+      "address": "890 Stockholm Street, Sattley, Texas, 52918",
+      "name": {
+        "last": "Daugherty",
+        "first": "Bonita"
+      },
+      "_id": 9
+    }
+  ],
+  "carriers": [
+    {
+      "email": "shirley.kelly@carriers.org",
+      "phone": "(924) 420-3527",
+      "name": {
+        "last": "Kelly",
+        "first": "Shirley"
+      },
+      "_id": 0
+    },
+    {
+      "email": "turner.frye@carriers.biz",
+      "phone": "(973) 578-2230",
+      "name": {
+        "last": "Frye",
+        "first": "Turner"
+      },
+      "_id": 1
+    },
+    {
+      "email": "tran.leach@carriers.io",
+      "phone": "(910) 582-3727",
+      "name": {
+        "last": "Leach",
+        "first": "Tran"
+      },
+      "_id": 2
+    },
+    {
+      "email": "robinson.melton@carriers.co.uk",
+      "phone": "(942) 404-3117",
+      "name": {
+        "last": "Melton",
+        "first": "Robinson"
+      },
+      "_id": 3
+    },
+    {
+      "email": "mamie.delaney@carriers.info",
+      "phone": "(947) 508-3359",
+      "name": {
+        "last": "Delaney",
+        "first": "Mamie"
+      },
+      "_id": 4
+    },
+    {
+      "email": "regina.nolan@carriers.us",
+      "phone": "(993) 463-3446",
+      "name": {
+        "last": "Nolan",
+        "first": "Regina"
+      },
+      "_id": 5
+    },
+    {
+      "email": "claudette.warner@carriers.me",
+      "phone": "(841) 442-2990",
+      "name": {
+        "last": "Warner",
+        "first": "Claudette"
+      },
+      "_id": 6
+    },
+    {
+      "email": "donovan.lloyd@carriers.biz",
+      "phone": "(960) 445-2202",
+      "name": {
+        "last": "Lloyd",
+        "first": "Donovan"
+      },
+      "_id": 7
+    },
+    {
+      "email": "vaughn.little@carriers.ca",
+      "phone": "(915) 443-2000",
+      "name": {
+        "last": "Little",
+        "first": "Vaughn"
+      },
+      "_id": 8
+    },
+    {
+      "email": "gardner.hale@carriers.tv",
+      "phone": "(884) 589-2234",
+      "name": {
+        "last": "Hale",
+        "first": "Gardner"
+      },
+      "_id": 9
+    }
+  ]
+}

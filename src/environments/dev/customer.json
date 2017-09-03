@@ -1,0 +1,104 @@
+{
+  "customers": [
+    {
+      "_id": 0,
+      "name": {
+        "first": "Deloris",
+        "last": "Carlson"
+      },
+      "address": "674 Franklin Street, Magnolia, Arkansas, 55801",
+      "email": "deloris@carlson.com",
+      "phone": "(846) 559-3928"
+    },
+    {
+      "_id": 1,
+      "name": {
+        "first": "Sweet",
+        "last": "Conrad"
+      },
+      "address": "212 Harwood Place, Hartsville/Hartley, Nevada, 58755",
+      "email": "sweet@conrad.biz",
+      "phone": "(967) 558-3005"
+    },
+    {
+      "_id": 2,
+      "name": {
+        "first": "Pierce",
+        "last": "Mcfarland"
+      },
+      "address": "218 Varanda Place, Waiohinu, Iowa, 53852",
+      "email": "pierce@mcfarland.io",
+      "phone": "(888) 516-2783"
+    },
+    {
+      "_id": 3,
+      "name": {
+        "first": "Roberson",
+        "last": "Stanley"
+      },
+      "address": "243 Bradford Street, Rutherford, Georgia, 93695",
+      "email": "roberson@stanley.me",
+      "phone": "(992) 572-2967"
+    },
+    {
+      "_id": 4,
+      "name": {
+        "first": "Rosalie",
+        "last": "Perry"
+      },
+      "address": "651 Taylor Street, Bluetown, Illinois, 71888",
+      "email": "rosalie@perry.co.uk",
+      "phone": "(873) 490-3575"
+    },
+    {
+      "_id": 5,
+      "name": {
+        "first": "Knox",
+        "last": "Barker"
+      },
+      "address": "313 Troutman Street, Smock, Michigan, 17622",
+      "email": "knox@barker.us",
+      "phone": "(907) 544-2992"
+    },
+    {
+      "_id": 6,
+      "name": {
+        "first": "Griffith",
+        "last": "Dunlap"
+      },
+      "address": "395 Florence Avenue, Crisman, New York, 75227",
+      "email": "griffith@dunlap.net",
+      "phone": "(877) 450-3312"
+    },
+    {
+      "_id": 7,
+      "name": {
+        "first": "Sonia",
+        "last": "Moreno"
+      },
+      "address": "321 Schermerhorn Street, Chumuckla, Vermont, 44134",
+      "email": "sonia@moreno.tv",
+      "phone": "(902) 550-3234"
+    },
+    {
+      "_id": 8,
+      "name": {
+        "first": "Gena",
+        "last": "Horton"
+      },
+      "address": "362 Dahlgreen Place, Roderfield, District Of Columbia, 16938",
+      "email": "gena@horton.org",
+      "phone": "(939) 428-3491"
+    },
+    {
+      "_id": 9,
+      "name": {
+        "first": "Ford",
+        "last": "Hutchinson"
+      },
+      "address": "732 Clarendon Road, Taft, South Dakota, 55525",
+      "email": "ford@hutchinson.ca",
+      "phone": "(841) 408-3920"
+    }
+  ]
+}
