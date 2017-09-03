@@ -4,55 +4,31 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header" data-background-color="red">
-                        <h4 class="title">Simple Table</h4>
-                        <p class="category">Here is a subtitle for this table</p>
+                        <h4 class="title">Customers</h4>
+                        <p class="category">Active Customers - September 2017</p>
                     </div>
                     <div class="card-content table-responsive">
                         <table class="table">
                             <thead class="text-danger">
                             <tr>
                                 <th>Name</th>
-                                <th>Country</th>
-                                <th>City</th>
-                                <th>Salary</th>
+                                <th>Address</th>
+                                <th>City, State</th>
+                                <th>Email</th>
+                                <th>Phone</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>Dakota Rice</td>
-                                <td>Niger</td>
-                                <td>Oud-Turnhout</td>
-                                <td class="text-danger">$36,738</td>
-                            </tr>
-                            <tr>
-                                <td>Minerva Hooper</td>
-                                <td>Curaçao</td>
-                                <td>Sinaai-Waas</td>
-                                <td class="text-danger">$23,789</td>
-                            </tr>
-                            <tr>
-                                <td>Sage Rodriguez</td>
-                                <td>Netherlands</td>
-                                <td>Baileux</td>
-                                <td class="text-danger">$56,142</td>
-                            </tr>
-                            <tr>
-                                <td>Philip Chaney</td>
-                                <td>Korea, South</td>
-                                <td>Overland Park</td>
-                                <td class="text-danger">$38,735</td>
-                            </tr>
-                            <tr>
-                                <td>Doris Greene</td>
-                                <td>Malawi</td>
-                                <td>Feldkirchen in Kärnten</td>
-                                <td class="text-danger">$63,542</td>
-                            </tr>
-                            <tr>
-                                <td>Mason Porter</td>
-                                <td>Chile</td>
-                                <td>Gloucester</td>
-                                <td class="text-danger">$78,615</td>
+                            <tr *ngFor="let customer of customers | async; let i = index">
+                                <td>
+                                    <a routerLink="/user-profile">
+                                    {{customer.name.first}} {{customer.name.last}}
+                                    </a>
+                                </td>
+                                <td>{{customer.address.line1}} {{customer.address.line2}}</td>
+                                <td>{{customer.address.city}}, {{customer.address.state}}</td>
+                                <td>{{customer.email}}</td>
+                                <td class="text-danger">{{customer.phone}}</td>
                             </tr>
                             </tbody>
                         </table>
