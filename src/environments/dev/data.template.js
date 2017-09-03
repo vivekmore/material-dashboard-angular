@@ -23,7 +23,13 @@
                     first: '{{firstName()}}',
                     last: '{{surname()}}'
                 },
-                address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(10000, 99999)}}',
+                address: {
+                    line1: '{{integer(50, 500)}} {{street()}}',
+                    line2: 'at intersection of {{street()}} and {{street()}}',
+                    city: '{{city()}}',
+                    state: '{{state()}}',
+                    zip: '{{integer(20000, 90000)}}'
+                },
                 email: function (tags) {
                     return (this.name.first + '.' + this.name.last + '@customers' + tags.domainZone()).toLowerCase();
                 },
@@ -32,17 +38,17 @@
         }
     ],
 
-    "customer-subscription": [
-        {"_id": 0, "customer_id": 0, "subscription_type_id": 0, "subscription_status_id": 1, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 1, "customer_id": 0, "subscription_type_id": 1, "subscription_status_id": 1, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 2, "customer_id": 0, "subscription_type_id": 2, "subscription_status_id": 2, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 3, "customer_id": 0, "subscription_type_id": 3, "subscription_status_id": 2, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 4, "customer_id": 0, "subscription_type_id": 4, "subscription_status_id": 1, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 5, "customer_id": 5, "subscription_type_id": 0, "subscription_status_id": 1, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 6, "customer_id": 6, "subscription_type_id": 1, "subscription_status_id": 1, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 7, "customer_id": 7, "subscription_type_id": 2, "subscription_status_id": 1, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 8, "customer_id": 8, "subscription_type_id": 3, "subscription_status_id": 2, "for_date": "09/01/2017", "last_updated": "08/31/2017"},
-        {"_id": 9, "customer_id": 9, "subscription_type_id": 4, "subscription_status_id": 0, "for_date": "09/01/2017", "last_updated": "08/31/2017"}
+    customer_subscriptions: [
+        {
+            'repeat(10)': {
+                _id: '{{index()}}',
+                customer_id: '{{integer(0,10)}}',
+                subscription_type_id: '{{integer(0,20)}}',
+                subscription_status_id: '{{random(0,1,2)}}',
+                for_date: '{{date(new Date(2017, 8, 1), new Date())}}',
+                last_updated: '{{date(new Date(), new Date())}}'
+            }
+        }
     ],
 
     "sources": [
@@ -72,17 +78,15 @@
         }
     ],
 
-    "subscription-type": [
-        {"_id": 0, "source_id": 0, "name": "WSJ 0", "days": "mon,tue,wed,thu,fri" },
-        {"_id": 1, "source_id": 0, "name": "WSJ 1", "days": "sat" },
-        {"_id": 2, "source_id": 0, "name": "WSJ 2", "days": "sun" },
-        {"_id": 3, "source_id": 1, "name": "USA 3", "days": "mon,tue,wed,thu,fri" },
-        {"_id": 4, "source_id": 1, "name": "USA 4", "days": "sat" },
-        {"_id": 5, "source_id": 1, "name": "USA 5", "days": "sun" }
+    subscription_types: [
+        {
+            'repeat(15)': {
+                _id: '{{index()}}',
+                source_id: '{{integer(0,6)}}',
+                name: '{{random("WSJ", "USA", "NYT", "Barrons", "Detroit Free Press", "Detroit News")}} {{integer(10,99)}}',
+                days: '{{random("mon,tue,wed,thu,fri", "sat", "sun", "mon,tue,wed,thu,fri,sat,sun", "sat,sun")}}'
+            }
+        }
     ]
-
-
-
-
 
 }
