@@ -35,5 +35,5 @@ export class SidebarComponent implements OnInit {
 
     isMobileMenu() {
         return $(window).width() <= 991;
-    };
+    }
 }
