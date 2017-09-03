@@ -19,27 +19,28 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { UpgradeComponent } from './upgrade/upgrade.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    UserProfileComponent,
-    TableListComponent,
-    TypographyComponent,
-    IconsComponent,
-    MapsComponent,
-    NotificationsComponent,
-    UpgradeComponent,
+    declarations: [
+        AppComponent,
+        DashboardComponent,
+        UserProfileComponent,
+        TableListComponent,
+        TypographyComponent,
+        IconsComponent,
+        MapsComponent,
+        NotificationsComponent,
+        UpgradeComponent
 
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    ComponentsModule,
-RouterModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        ComponentsModule,
+        RouterModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
