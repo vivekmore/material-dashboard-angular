@@ -13,6 +13,7 @@ export const ROUTES: RouteInfo[] = [
     {path: 'dashboard', title: 'Dashboard', icon: 'dashboard', cssClass: ''},
     {path: 'user-profile', title: 'User Profile', icon: 'person', cssClass: ''},
     {path: 'table-list', title: 'Customers', icon: 'content_paste', cssClass: ''},
+    {path: 'delivery-route', title: 'Delivery Routes', icon: 'map', cssClass: ''},
     {path: 'icons', title: 'Icons', icon: 'bubble_chart', cssClass: ''},
     {path: 'notifications', title: 'Notifications', icon: 'notifications', cssClass: ''}
 ];

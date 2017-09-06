@@ -20,6 +20,7 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { DeliveryRouteComponent } from './delivery-route/delivery-route.component';
 
 const config = {
     apiKey: 'AIzaSyCefC7rLVzJz8gi1Al4xQqbJE6psSX25SU',
@@ -40,7 +41,8 @@ const config = {
         IconsComponent,
         MapsComponent,
         NotificationsComponent,
-        UpgradeComponent
+        UpgradeComponent,
+        DeliveryRouteComponent
 
     ],
     imports: [

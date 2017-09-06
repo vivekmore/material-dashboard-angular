@@ -11,12 +11,14 @@ import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
+import { DeliveryRouteComponent } from './delivery-route/delivery-route.component';
 
 const routes: Routes = [
     {path: 'dashboard', component: DashboardComponent},
     {path: 'user-profile', redirectTo: 'user-profile/4', pathMatch: 'full'},
     {path: 'user-profile/:customerId', component: UserProfileComponent},
     {path: 'table-list', component: TableListComponent},
+    {path: 'delivery-route', component: DeliveryRouteComponent},
     {path: 'typography', component: TypographyComponent},
     {path: 'icons', component: IconsComponent},
     {path: 'maps', component: MapsComponent},

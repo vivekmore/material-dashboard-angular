@@ -1,0 +1,44 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header" data-background-color="green">
+                        <h4 class="title">Delivery Routes</h4>
+                        <p class="category">Carriers working today: 8</p>
+                    </div>
+                    <div class="card-content table-responsive">
+                        <table class="table">
+                            <thead class="text-success">
+                            <tr>
+                                <th><strong>ID</strong></th>
+                                <th><strong>Name</strong></th>
+                                <th><strong>Section of City</strong></th>
+                                <th><strong>Customers count</strong></th>
+                                <th><strong>Subscription count</strong></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let deliveryRoute of deliveryRoutes">
+                                <td>{{deliveryRoute._id}}</td>
+                                <td>
+                                    <a routerLink="#">{{deliveryRoute.section}} </a>
+                                </td>
+                                <td>{{deliveryRoute.name}}</td>
+                                <td>{{deliveryRoute.count}}</td>
+                                <td class="text-secondary">
+                                    <div>WSJ: {{(deliveryRoute.count / 2) | number:'1.0-0'}}</div>
+                                    <div>NYT: {{(deliveryRoute.count / 3) | number:'1.0-0'}}</div>
+                                    <div>DF: {{(deliveryRoute.count / 5) | number:'1.0-0' }}</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
