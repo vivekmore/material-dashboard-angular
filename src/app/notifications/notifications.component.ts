@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var $: any;
+declare let $: any;
 
 @Component({
     selector: 'app-notifications',
@@ -19,7 +19,7 @@ export class NotificationsComponent implements OnInit {
 
         $.notify({
             icon: 'notifications',
-            message: 'Welcome to <b>Material Dashboard</b> - a beautiful freebie for every web developer.'
+            message: 'Welcome to <b>Dashboard+</b>! A must have for every growing business.'
 
         }, {
             type: type[color],

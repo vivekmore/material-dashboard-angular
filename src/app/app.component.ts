@@ -15,13 +15,8 @@ export class AppComponent implements OnInit {
     }
 
     isMaps(path) {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
-        titlee = titlee.slice(1);
-        if (path == titlee) {
-            return false;
-        }
-        else {
-            return true;
-        }
+        let title = this.location.prepareExternalUrl(this.location.path());
+        title = title.slice(1);
+        return path !== title;
     }
 }
