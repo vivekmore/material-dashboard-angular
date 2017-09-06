@@ -21,7 +21,7 @@
                             <tbody>
                             <tr *ngFor="let customer of customers | async; let i = index">
                                 <td>
-                                    <a routerLink="/user-profile">
+                                    <a routerLink="/user-profile/{{customer._id}}">
                                     {{customer.name.first}} {{customer.name.last}}
                                     </a>
                                 </td>
