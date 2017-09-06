@@ -14,6 +14,7 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
 
 const routes: Routes = [
     {path: 'dashboard', component: DashboardComponent},
+    {path: 'user-profile', redirectTo: 'user-profile/4', pathMatch: 'full'},
     {path: 'user-profile/:customerId', component: UserProfileComponent},
     {path: 'table-list', component: TableListComponent},
     {path: 'typography', component: TypographyComponent},
