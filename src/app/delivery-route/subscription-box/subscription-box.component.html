@@ -1,0 +1,10 @@
+<a *ngFor="let n of range()"
+   class="btn"
+   [ngClass]="{
+    'btn-success': subscription.name === 'NYT',
+    'btn-warning': subscription.name === 'DFP',
+    'btn-danger': subscription.name === 'WSJ'
+    }">
+
+    {{subscription.name}}
+</a><br>

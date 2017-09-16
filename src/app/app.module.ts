@@ -21,6 +21,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { DeliveryRouteComponent } from './delivery-route/delivery-route.component';
+import { DeliveryRouteDetailsComponent } from './delivery-route/delivery-route-details/delivery-route-details.component';
+import { SubscriptionBoxComponent } from './delivery-route/subscription-box/subscription-box.component';
 
 const config = {
     apiKey: 'AIzaSyCefC7rLVzJz8gi1Al4xQqbJE6psSX25SU',
@@ -42,7 +44,9 @@ const config = {
         MapsComponent,
         NotificationsComponent,
         UpgradeComponent,
-        DeliveryRouteComponent
+        DeliveryRouteComponent,
+        DeliveryRouteDetailsComponent,
+        SubscriptionBoxComponent
 
     ],
     imports: [

@@ -12,6 +12,7 @@ import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { DeliveryRouteComponent } from './delivery-route/delivery-route.component';
+import { DeliveryRouteDetailsComponent } from './delivery-route/delivery-route-details/delivery-route-details.component';
 
 const routes: Routes = [
     {path: 'dashboard', component: DashboardComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
     {path: 'user-profile/:customerId', component: UserProfileComponent},
     {path: 'table-list', component: TableListComponent},
     {path: 'delivery-route', component: DeliveryRouteComponent},
+    {path: 'delivery-route-details', component: DeliveryRouteDetailsComponent},
     {path: 'typography', component: TypographyComponent},
     {path: 'icons', component: IconsComponent},
     {path: 'maps', component: MapsComponent},
