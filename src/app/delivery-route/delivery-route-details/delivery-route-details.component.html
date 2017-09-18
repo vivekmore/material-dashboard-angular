@@ -14,17 +14,25 @@
                                 <th class="col-md-1"><strong>#</strong></th>
                                 <th class="col-md-3"><strong>Address</strong></th>
                                 <th class="col-md-4"><strong>Subscription</strong></th>
-                                <th class="col-md-4"><strong>Notes</strong></th>
+f                                <!--<th class="col-md-4"><strong>Notes</strong></th>-->
                             </tr>
                             </thead>
                             <tbody>
                             <tr *ngFor="let dp of deliveryPoints; let i = index">
                                 <td>{{i+1}}</td>
-                                <td>{{dp.address}}</td>
+                                <td>
+                                    <!--<button type="button" class="btn btn-outline-secondary">Mr. John Doe</button><br>-->
+                                    <strong>Mr. John Doe</strong><br><br>
+                                    <blockquote><strong>{{dp.address}}</strong>
+                                        <br>
+                                        DW to Rt of Hydrant
+                                    </blockquote>
+
+                                </td>
                                 <td>
                                     <app-subscription-box *ngFor="let s of dp.subscriptions" [subscription]="s"></app-subscription-box>
                                 </td>
-                                <td>DW to Rt of Hydrant</td>
+                                <!--<td>DW to Rt of Hydrant</td>-->
                             </tr>
                             </tbody>
                         </table>
